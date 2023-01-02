@@ -5253,10 +5253,10 @@ end
 
 -- // Window
 
-
+Date = os.date("%d".." ".."%B".." ".."%Y")
 local window =
     library:new(
-    {textsize = 13.5, font = Enum.Font.RobotoMono, name = "Krahub", color = Color3.fromRGB(33, 222, 255)}
+    {textsize = 13.5, font = Enum.Font.RobotoMono, name = "Krahub"..date, color = Color3.fromRGB(255, 64, 64)}
 )
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G_Hub_Extras/main/Universal_Client_Bypass"))()
@@ -5278,13 +5278,12 @@ end)
 -- Tabs --
 local Main = window:page({name = "Main"})
 local Visual = window:page({name = "Visual"})
-local Setting = window:page({name = "Setting"})
+local Setting = window:page({name = "Settings"})
 
 -- Settings tab --
-local MainL = Main:section({name = "General", side = "left", size = 30})
-local MainR = Main:section({name = "Teleport", side = "right", size = 48})
+local MainL = Main:section({name = "General", side = "left", size = 40})
+local MainR = Main:section({name = "Teleport", side = "right", size = 60})
 
-local MiscL = Visual:section({name = "Player", side = "left", size = 50})
+local MiscL = Visual:section({name = "Player", side = "left", size = 75})
 
-local SettingL = Setting:section({name = "Settings", side = "left", size = 45})
-
+local SettingL = Setting:section({name = "Settings", side = "left", size = 60})
