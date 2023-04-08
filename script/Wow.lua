@@ -1,4 +1,10 @@
-EquiqFlameFruitRemote:button(
+-- Fruit dealer
+
+
+
+
+
+RemoteEquipFlame:button(
     {
         name = "Equiq",
         callback = function(Value)
@@ -6,3 +12,4 @@ EquiqFlameFruitRemote:button(
         end
     }
 )
+
